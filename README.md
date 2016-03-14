@@ -1,2 +1,2 @@
-# docs-custom-science-example-python-basic
-Example repository for Documentation of Custom Science in Python
+# Custom Science Python Example Basic
+Example repository for Documentation of Custom Science Python application. See [documentation](http://developers.keboola.com/extend/custom-science/python/) for usage instructions.
