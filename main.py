@@ -5,7 +5,7 @@ csvdel = ','
 csvquo = '"'
 
 with open('in/tables/source.csv', mode='rt', encoding='utf-8') as inFile, open('out/tables/destination.csv', mode='wt', encoding='utf-8') as outFile:
-    writer = csv.DictWriter(outFile, lineterminator=csvlt, delimiter = csvdel, quotechar = csvquo)
+    writer = csv.DictWriter(outFile, fieldnames = ['number', 'someText', 'doulber_number'], lineterminator=csvlt, delimiter = csvdel, quotechar = csvquo)
     writer.writeheader()
 
     lazyLines = (line.replace('\0', '') for line in inFile)
